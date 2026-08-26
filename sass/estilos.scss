@@ -1,0 +1,149 @@
+// ==============================
+// VARIABLES
+// ==============================
+
+$color-principal: #7c34a5;
+$color-secundario: #7c34a5;
+$color-fondo: #f4f8f6;
+$color-blanco: #ffffff;
+$color-texto: #333333;
+$sombra: 0 4px 12px rgba(0, 0, 0, 0.10);
+
+// ==============================
+// MIXIN
+// ==============================
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ==============================
+// ESTILOS GENERALES
+// ==============================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+// ==============================
+// ENCABEZADO
+// ==============================
+
+.encabezado {
+    background-color: $color-principal;
+    color: $color-blanco;
+    padding: 40px 0;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+// ==============================
+// PRESENTACIÓN
+// ==============================
+
+.presentacion {
+    text-align: center;
+    padding: 50px 20px;
+
+    h2 {
+        color: $color-secundario;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+}
+
+// ==============================
+// BOTÓN
+// ==============================
+
+.boton {
+    display: inline-block;
+    background-color: $color-principal;
+    color: $color-blanco;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $color-secundario;
+    }
+}
+
+// ==============================
+// TARJETAS
+// ==============================
+
+.tarjetas {
+    @include centrado;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.tarjeta {
+    background-color: $color-blanco;
+    width: 30%;
+    min-width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: $sombra;
+    text-align: center;
+
+    h3 {
+        color: $color-principal;
+        margin-bottom: 12px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+// ==============================
+// PIE
+// ==============================
+
+.pie {
+    background-color: $color-secundario;
+    color: $color-blanco;
+    text-align: center;
+    padding: 20px;
+}
+
+// ==============================
+// RESPONSIVE
+// ==============================
+
+@media (max-width: 700px) {
+    .tarjeta {
+        width: 100%;
+    }
+}

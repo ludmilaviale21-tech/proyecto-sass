@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f6;
+  color: #333333;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.encabezado {
+  background-color: #7c34a5;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+.encabezado h1 {
+  margin-bottom: 10px;
+}
+.encabezado p {
+  font-size: 18px;
+}
+
+.presentacion {
+  text-align: center;
+  padding: 50px 20px;
+}
+.presentacion h2 {
+  color: #7c34a5;
+  margin-bottom: 15px;
+}
+.presentacion p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #7c34a5;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.boton:hover {
+  background-color: #7c34a5;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  width: 30%;
+  min-width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.tarjeta h3 {
+  color: #7c34a5;
+  margin-bottom: 12px;
+}
+.tarjeta p {
+  line-height: 1.5;
+}
+
+.pie {
+  background-color: #7c34a5;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
