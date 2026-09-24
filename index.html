@@ -3,30 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto con SASS</title>
+    <title>Git, GitHub y SASS</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
     <header class="encabezado">
-        <h1>Mi proyecto con SASS</h1>
-        <p>Ejemplo de estilos utilizando variables, anidamiento y mixins.</p>
+        <h1>Git, GitHub y SASS</h1>
+        <p>Conceptos, diferencias y aplicación en un proyecto web</p>
     </header>
 
     <main class="contenedor">
 
         <section class="tarjeta">
+            <h2>¿Qué es Git?</h2>
+            <p>
+                Git es un sistema de control de versiones que permite registrar
+                los cambios realizados en un proyecto. De esta manera, podemos
+                guardar diferentes versiones de nuestros archivos y volver a
+                una versión anterior si es necesario.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>¿Qué es GitHub?</h2>
+            <p>
+                GitHub es una plataforma que permite almacenar y compartir
+                repositorios de proyectos utilizando Git. También facilita el
+                trabajo colaborativo y permite acceder a los proyectos desde
+                Internet.
+            </p>
+        </section>
+
+        <section class="tarjeta">
             <h2>¿Qué es SASS?</h2>
             <p>
-                SASS es un preprocesador de CSS que permite escribir
-                estilos de una manera más organizada y reutilizable.
+                SASS es un preprocesador de CSS que permite escribir estilos
+                de una manera más organizada, reutilizable y fácil de mantener.
+                Luego, el código SASS se compila y se transforma en CSS.
             </p>
-            <button>Conocer más</button>
-        <p>Este proyecto fue realizado utilizando SASS.</p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Diferencias entre Git, GitHub y SASS</h2>
+
+            <div class="diferencias">
+
+                <div class="item">
+                    <h3>Git</h3>
+                    <p>
+                        Se utiliza para controlar y registrar las versiones
+                        de un proyecto.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>GitHub</h3>
+                    <p>
+                        Es una plataforma online donde podemos almacenar,
+                        compartir y trabajar con repositorios Git.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>SASS</h3>
+                    <p>
+                        Se utiliza para crear CSS de forma más organizada
+                        mediante variables, anidamiento, mixins y otras
+                        herramientas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>¿Cómo se relacionan?</h2>
+            <p>
+                Git, GitHub y SASS cumplen funciones diferentes, pero pueden
+                utilizarse juntos en un mismo proyecto web. SASS permite
+                organizar y escribir los estilos, Git permite registrar los
+                cambios realizados y GitHub permite almacenar y compartir
+                el proyecto en Internet.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Características de SASS utilizadas</h2>
+
+            <div class="lista">
+
+                <div class="item">
+                    <h3>Variables</h3>
+                    <p>
+                        Permiten guardar valores, como colores, para poder
+                        reutilizarlos en diferentes partes del código.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Nesting o anidamiento</h3>
+                    <p>
+                        Permite organizar los estilos de elementos relacionados
+                        dentro de otros selectores.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Mixin</h3>
+                    <p>
+                        Permite crear un conjunto de estilos reutilizables.
+                        En este proyecto se utilizó para centrar elementos.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>Compilación</h3>
+                    <p>
+                        El archivo estilos.scss se transforma en estilos.css
+                        para que el navegador pueda interpretar los estilos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Proceso realizado</h2>
+
+            <ol class="proceso">
+                <li>Se creó la estructura inicial del proyecto.</li>
+                <li>Se creó el archivo estilos.scss.</li>
+                <li>Se agregaron variables, nesting y un mixin.</li>
+                <li>Se compiló SASS para generar el archivo estilos.css.</li>
+                <li>Se utilizó Git para registrar los cambios mediante commits.</li>
+                <li>Se creó y conectó el repositorio con GitHub.</li>
+                <li>Se subió el proyecto a GitHub.</li>
+            </ol>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Conclusión</h2>
+            <p>
+                Git permite controlar las versiones de un proyecto, GitHub
+                permite almacenar y compartir el repositorio y SASS facilita
+                la organización de los estilos. El uso conjunto de estas
+                herramientas permite desarrollar proyectos web de una manera
+                más ordenada y mantener un registro de los cambios realizados.
+            </p>
         </section>
 
     </main>
+
+    <footer class="pie">
+        <p>Proyecto realizado con HTML, SASS, Git y GitHub.</p>
+    </footer>
 
 </body>
 </html>

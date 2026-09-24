@@ -8,12 +8,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f8f6;
   color: #333333;
+  line-height: 1.6;
 }
 
 .encabezado {
   background-color: #7c34a5;
   color: #ffffff;
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
 }
 .encabezado h1 {
@@ -31,27 +32,53 @@ body {
 .contenedor .tarjeta {
   background-color: #ffffff;
   padding: 30px;
+  margin-bottom: 25px;
   border-radius: 10px;
-  text-align: center;
+  border: 1px solid #e0d5e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .contenedor .tarjeta h2 {
   color: #7c34a5;
   margin-bottom: 15px;
+  text-align: center;
 }
 .contenedor .tarjeta p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.contenedor .tarjeta button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+.contenedor .diferencias,
+.contenedor .lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.contenedor .diferencias .item,
+.contenedor .lista .item {
+  background-color: #f4f8f6;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #7c34a5;
+}
+.contenedor .diferencias .item h3,
+.contenedor .lista .item h3 {
+  color: #7c34a5;
+  margin-bottom: 10px;
+}
+.contenedor .lista {
+  grid-template-columns: repeat(2, 1fr);
+}
+.contenedor .proceso {
+  padding-left: 25px;
+}
+.contenedor .proceso li {
+  margin-bottom: 10px;
+}
+
+.pie {
   background-color: #7c34a5;
   color: #ffffff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 5px;
-  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

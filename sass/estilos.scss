@@ -2,6 +2,7 @@ $color-principal: #7c34a5;
 $color-secundario: #f4f8f6;
 $color-blanco: #ffffff;
 $color-texto: #333333;
+$color-borde: #e0d5e8;
 
 @mixin centrado {
     display: flex;
@@ -19,12 +20,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: $color-secundario;
     color: $color-texto;
+    line-height: 1.6;
 }
 
 .encabezado {
     background-color: $color-principal;
     color: $color-blanco;
-    padding: 30px;
+    padding: 40px 20px;
     text-align: center;
 
     h1 {
@@ -44,27 +46,58 @@ body {
     .tarjeta {
         background-color: $color-blanco;
         padding: 30px;
+        margin-bottom: 25px;
         border-radius: 10px;
-        text-align: center;
+        border: 1px solid $color-borde;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 
         h2 {
             color: $color-principal;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         p {
-            margin-bottom: 20px;
-        }
-
-        button {
-            @include centrado;
-            margin: 0 auto;
-            background-color: $color-principal;
-            color: $color-blanco;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
+            margin-bottom: 10px;
         }
     }
+
+    .diferencias,
+    .lista {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .item {
+            background-color: $color-secundario;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid $color-principal;
+
+            h3 {
+                color: $color-principal;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proceso {
+        padding-left: 25px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.pie {
+    background-color: $color-principal;
+    color: $color-blanco;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
